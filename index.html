@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MOSAIC Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1 class="logo">MOSAIC</h1>
+      <nav>
+        <ul class="menu">
+          <li class="menu-item active">Dashboard
+          </li>
+          <li class="menu-item"><a href="#">Explore</a></li>
+          <li class="menu-item"><a href="#">Bookmark</a></li>
+          <li class="menu-item"><a href="#">Downloads</a></li>
+          <li class="menu-item notification">Notification <span class="badge">12</span></li>
+          <li class="menu-item upload">
+            <div>Upload your photos <br />according to the <strong>Calendar!</strong></div>
+            <span class="badge">+</span>
+          </li>
+          <li class="menu-item"><a href="#">Settings</a></li>
+          <li class="menu-item"><a href="#">Help</a></li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <img src="https://avatars.githubusercontent.com/u/151694741?v=4" alt="ME" />
+        <div>
+          <div class="profile-name">Allan Rabelo</div>
+          <div class="profile-status">Account Pro</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h2>Dashboard</h2>
+        <nav class="tabs">
+          <button class="tab active">Feed</button>
+          <button class="tab">Edit</button>
+        </nav>
+        <div class="search">
+          <input type="search" placeholder="Search" />
+        </div>
+      </header>
+
+      <section class="filters">
+        <button class="filter-btn">🌳 Nature</button>
+        <button class="filter-btn">📱 Technology</button>
+        <button class="filter-btn">🐇 Animals</button>
+        <button class="filter-btn">🍔 Food</button>
+        <button class="filter-btn">🏢 Building</button>
+        <button class="filter-btn">⚽ Sport</button>
+        <button class="filter-btn">🚗 Car</button>
+        <button class="filter-btn">More ▼</button>
+      </section>
+
+      <section class="gallery">
+
+        <div class="card house">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="House" />
+          <div class="card-info">
+            <div class="title">In the Home #4630</div>
+            <div class="author">Theresa Webb</div>
+          </div>
+          <span class="tag">House</span>
+        </div>
+
+        <div class="card house">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400&q=80" alt="House" />
+          <div class="card-info">
+            <div class="title">In the Home #9520</div>
+            <div class="author">Ralph Edwards</div>
+          </div>
+          <span class="tag">House</span>
+        </div>
+        <div class="new-image-section">
+          <h3>Add New Image</h3>
+          <input type="url" placeholder="URL da imagem" id="image-url" />
+          <div class="buttons">
+            <button id="add-btn">Add</button>
+            <button id="cancel-btn">Cancel</button>
+          </div>
+          <div id="new-image-display"></div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
